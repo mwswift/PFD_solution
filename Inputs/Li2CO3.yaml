@@ -1,0 +1,9 @@
+phi0    : 1.844417907251016   # Charge neutrality potential (V)
+NSites  : 1.64940788011e+22   # Defect site density (cm^-3)
+Ef0     : 0.9110166485045346  # Formation energy at charge neutrality (eV)
+epsilon : 5.64                # Dielectric constant
+alpha   : 0.1                 # Saturation parameter
+T       : 300                 # Temperature (Kelvin)
+
+phi_target : 1.24              # Target phi for LiPON interlayer (V)
+#phi_target : 1.62              # Target phi for LLZO interlayer (V)

@@ -1,0 +1,8 @@
+x_1      =   0.0881 A
+phi(x_1) =   0.0008 V
+x_2      = 1.34E+06 A
+phi(x_2) =   0.6706 V
+phi(inf) =   0.7105 V
+sigma    =  -0.0098 e/nm^2
+C/A      =   0.2208 muF/cm^2
+Could not find xstar for phi=1.2 between x=0.0 and x=1344993.3
