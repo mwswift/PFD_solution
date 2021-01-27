@@ -48,16 +48,16 @@ def PFD_solution(param_dict, print_values=True, plot_fname=None):
 	lamb = 6.90089807e+8*np.sqrt(epsilon * T/(alpha * NSites)) # Angstroms
 	f0   = phi0 / ftoV
 
-	# Eq. 8
+	# Eq. 10
 	U = -np.log((np.exp(f0)+B)/(1+B)) - np.log((np.exp(-f0)+B)/(1+B))
 	
-	# Eq. 9
+	# Eq. 11
 	fp0 = -np.sqrt(-2*U)
 
 	xi1 = -fp0
 	x1 = xi1 * lamb
 
-	# Eq. 12
+	# Eq. 14, 6
 	def phi1(x):
 		xi = x/lamb
 
@@ -65,10 +65,10 @@ def PFD_solution(param_dict, print_values=True, plot_fname=None):
 
 		return phi0 - f * ftoV
 
-	# Eq. 15
+	# Eq. 17
 	c = xi1 - np.sqrt(2)
 
-	# Eq.14
+	# Eq.16
 	def phi2(x):
 		xi = x/lamb
 		
@@ -86,8 +86,8 @@ def PFD_solution(param_dict, print_values=True, plot_fname=None):
 		else:
 			return phi2(x)
 
-	# Eq. 11
-	sigma = 6.90089807e-14 * fp0 * np.sqrt(alpha * NSites * T / epsilon)
+	# Eq. 13
+	sigma = 6.90089807e-14 * fp0 * np.sqrt(alpha * NSites * T * epsilon)
 	capacitance = 16.0218 * np.abs(sigma / phi0)
 
 	if print_values:
