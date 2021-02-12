@@ -29,7 +29,7 @@ Example output files:
 
 +++
 
-For the full numerical solution to the PDF equation, see the Mathematica notebooks:
+For the full numerical solution to the PDF equation, see the Mathematica notebooks.  These may be found in the "Mathematica_Notebooks" directory or on the Wolfram Cloud at
 
 https://www.wolframcloud.com/obj/swift/Published/PFD_LLZO.nb
 https://www.wolframcloud.com/obj/swift/Published/PFD_Interlayers.nb
@@ -46,4 +46,10 @@ Demo & Instructions for Use:
 	PFD_Interlayers has LiF Li2CO3, and Li2O parameters.  Li2CO3 and Li2O are commented out.  To reproduce results in these materials, comment out LiF data and uncomment desired data before re-running.
 	Expected output is plots showing numerical solution, both in physical and dimensionless units, together with some numerical comparisons with the approximations discussed in the text.
 	Runtime should be ~10 seconds.
+
++++
+
+First-principles calculations of band alignments and defect formation energies are located in a NOMAD repository:
+
+https://dx.doi.org/10.17172/NOMAD/2021.02.12-1
 
